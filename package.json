@@ -1,0 +1,19 @@
+{
+  "name": "image-processing-api",
+  "version": "1.0.0",
+  "description": "An API for processing images into desired resolution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daredevilteja/Image-Processing-API.git"
+  },
+  "author": "Ravi Teja Natchireddi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daredevilteja/Image-Processing-API/issues"
+  },
+  "homepage": "https://github.com/daredevilteja/Image-Processing-API#readme"
+}
