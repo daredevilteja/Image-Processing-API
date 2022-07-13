@@ -4,25 +4,35 @@ import path from 'path';
 import resizeImage from '../../../utilities/imageResize';
 
 const images = express.Router();
+const applicableFiles = [
+  'encenadaport',
+  'fjord',
+  'icelandwaterfall',
+  'palmtunnel',
+  'santamonica'
+];
 
 images.get('/', async (req, res) => {
-  const filename = req.query.filename;
+  const filename = String(req.query.filename);
   const height = Number(req.query.height);
   const width = Number(req.query.width);
   const importedFileName = `images/${filename}.jpg`;
   const exportedFileName = `converted-images/${filename}_${width}x${height}_thumb.jpg`;
 
   // error handling
-  if (!filename) {
+  if (!applicableFiles.includes(filename)) {
     res.send('Please include a valid filename');
+    return;
   }
 
   if (!width) {
     res.send('Please include a width > 0');
+    return;
   }
 
   if (!height) {
     res.send('Please include a height > 0');
+    return;
   }
 
   // caching logic
@@ -33,6 +43,7 @@ images.get('/', async (req, res) => {
     );
   } catch (err) {
     await resizeImage(importedFileName, exportedFileName, height, width);
+
     console.log(
       `New image is created for ${exportedFileName} in converted images folder`
     );
