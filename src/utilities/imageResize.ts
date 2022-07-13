@@ -3,8 +3,8 @@ const sharp = require('sharp');
 const resizeImage = async (
   importedFileName: string,
   exportedFileName: string,
-  width: number | undefined,
-  height: number | undefined
+  width: number,
+  height: number
 ) => {
   try {
     await sharp(importedFileName)
