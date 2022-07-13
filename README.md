@@ -8,7 +8,7 @@ This api is used to resize the images inside `images` folder to required **width
 2. Clone this repository into your local machine.
 3. Go to the root directory in your cloned folder and then run `npm install`.
 4. Run `npm run start` to start the webserver.
-5. Open [localhost](https://localhost:3000) in your browser.
+5. Open [localhost:3000](https://localhost:3000) in your browser.
 
 # Usage
 
