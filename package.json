@@ -4,7 +4,7 @@
   "description": "An API for processing images into desired resolution",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint 'build/**/*.js'",
+    "lint": "eslint 'src/**/*.ts'",
     "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "jasmine": "jasmine",
     "build": "npx tsc",
@@ -26,6 +26,8 @@
     "@types/jasmine": "^4.0.3",
     "@types/node": "^18.0.3",
     "@types/sharp": "^0.30.4",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "jasmine-spec-reporter": "^7.0.0",
