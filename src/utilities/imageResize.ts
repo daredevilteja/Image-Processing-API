@@ -5,7 +5,7 @@ const resizeImage = async (
   exportedFileName: string,
   width: number,
   height: number
-) => {
+): Promise<void> => {
   try {
     await sharp(importedFileName)
       .resize({
