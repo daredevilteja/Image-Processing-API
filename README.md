@@ -16,3 +16,12 @@ This api is used to resize the images inside `images` folder to required **width
 2. Goto [https://localhost:3000/api/images?filename={image_name}&width={image_width}&height={image_height}](https://localhost:3000/api/images?filename=fjord&width=100&height=100) to start the conversion and see your converted image.
 3. In the above mentioned url replace `image_name` with your images name and `width`, `height` with the width and height you want your image to get converted.
 4. After the conversion process, you can find your converted images in the `converted-images` folder which is present in your root directory.
+
+# Scripts
+
+1. `npm run start` - to start the server.
+2. `npm run lint` - to apply linting and find any errors in source files.
+3. `npm run prettier` - to apply the prettier formatting on source files.
+4. `npm run jasmine` - to run tests using jasmine.
+5. `npm run build` - to run the build script and generate build files.
+6. `npm run test` - to generate the build files and then run jasmine for testing.
