@@ -13,7 +13,7 @@ This api is used to resize the images inside `images` folder to required **width
 # Usage
 
 1. Place the image(.jpg) files which you want to resize into `images` directory.
-2. Goto [https://localhost:3000/api/images?filename={image_name}&width={image_width}&height={image_height}](https://localhost:3000/api/images?filename=fjord&width=100&height=100) to start the conversion and see your converted image.
+2. Goto [http://localhost:3000/api/images?filename={image_name}&width={image_width}&height={image_height}](http://localhost:3000/api/images?filename=fjord&width=100&height=100) to start the conversion and see your converted image.
 3. In the above mentioned url replace `image_name` with your images name and `width`, `height` with the width and height you want your image to get converted.
 4. After the conversion process, you can find your converted images in the `converted-images` folder which is present in your root directory.
 
