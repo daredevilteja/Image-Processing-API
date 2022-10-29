@@ -10,6 +10,7 @@ COPY . /usr/src/app
 
 WORKDIR /usr/src/app
 
+RUN rm -rf node_modules
 RUN npm install --platform=linux
 
 ENTRYPOINT [ "npm", "start" ]
