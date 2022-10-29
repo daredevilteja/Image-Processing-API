@@ -44,7 +44,7 @@ images.get(
         `cached file is used for ${exportedFileName} from converted images folder`
       );
     } catch (err) {
-      await resizeImage(importedFileName, exportedFileName, height, width);
+      await resizeImage(importedFileName, exportedFileName, width, height);
 
       console.log(
         `New image is created for ${exportedFileName} in converted images folder`
