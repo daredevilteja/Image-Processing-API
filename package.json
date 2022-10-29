@@ -9,7 +9,7 @@
     "jasmine": "jasmine",
     "build": "npx tsc",
     "test": "npm run build && npm run jasmine",
-    "start": "nodemon src/index.ts"
+    "start": "npm run build && nodemon src/index.ts"
   },
   "repository": {
     "type": "git",
